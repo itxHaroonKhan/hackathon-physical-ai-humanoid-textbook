@@ -1,4 +1,4 @@
-import { themes as prismThemes } from 'prism-react-renderer';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -6,23 +6,30 @@ const config = {
   tagline: 'Learning Physical AI and Robotics',
   favicon: 'img/favicon.ico',
 
-  // Set the production URL of your site here
+  // Set the production url of your site here
   url: 'https://itxHaroonKhan.github.io',
-  // GitHub Pages repo page: use '/repo-name/'
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config
-  organizationName: 'itxHaroonKhan', // Your GitHub username
-  projectName: 'physical-ai-humanoid-robotics-textbook', // Your repo name
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'Haroon Rasheed', // Usually your GitHub org/user name.
+  projectName: 'physical-ai-humanoid-robotics-textbook', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ur'],
+    locales: ['en', 'ur'], // Added Urdu locale
   },
+
+  
 
   presets: [
     [
@@ -31,11 +38,13 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/itxHaroonKhan/physical-ai-humanoid-robotics-textbook/edit/main/',
+          // Please change this to your repo. Suffix with a / for GitHub pages deployment.
+          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/itxHaroonKhan/physical-ai-humanoid-robotics-textbook/edit/main/',
+          // Please change this to your repo. Suffix with a / for GitHub pages deployment.
+          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -47,12 +56,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
       image: 'img/ph-ai-logo.jpg',
       navbar: {
         title: 'Physical AI & Humanoid Robotics Textbook',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/ph-ai-logo.png',
+          src: 'img/ph-ai-logo.jpg',
         },
         items: [
           {
@@ -62,7 +72,7 @@ const config = {
             label: 'Textbook',
           },
           {
-            href: 'https://github.com/itxHaroonKhan',
+            href: 'https://github.com/itxHaroonKhan?tab=overview&from=2024-12-01&to=2024-12-31',
             label: 'GitHub',
             position: 'right',
           },
@@ -70,15 +80,15 @@ const config = {
             type: 'localeDropdown',
             position: 'right',
             i18n: {
-              defaultLocale: 'en',
-              locales: ['en', 'ur'],
-              localeConfigs: {
-                ur: {
-                  label: 'اردو',
-                  direction: 'rtl',
-                },
-              },
-            },
+  defaultLocale: 'en',
+  locales: ['en', 'ur'],
+  localeConfigs: {
+    ur: {
+      label: 'اردو',
+      direction: 'rtl',
+    },
+  },
+},
           },
         ],
       },
@@ -102,7 +112,7 @@ const config = {
                 href: 'https://instagram.com/',
               },
               {
-                label: 'LinkedIn',
+                label: 'LinkenIN',
                 href: 'https://www.linkedin.com/i',
               },
               {
@@ -121,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook, Built with ❤️ by Haroon Rasheed.`,
+        copyright: `Copyright  ${new Date().getFullYear()} Physical AI & Humanoid Robotics Textbook, Built with ❤️ by Haroon Rasheed.`,
       },
       prism: {
         theme: prismThemes.github,
