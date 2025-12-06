@@ -1,0 +1,31 @@
+/**
+ * Any custom CSS here will be applied to the theme.
+ */
+
+/* Navbar styling */
+.navbar {
+  background: linear-gradient(90deg, #673ab7, #512da8);
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar__title, .navbar__item, .navbar__link {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Footer styling */
+.footer {
+  background-color: #311b92;
+  padding: 30px;
+  color: #eee;
+}
+
+.footer__link-item {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__link-item:hover {
+  color: #ffeb3b;
+}
