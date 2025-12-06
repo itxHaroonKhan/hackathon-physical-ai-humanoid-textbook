@@ -9,7 +9,7 @@ const config = {
   // Set the production URL of your site here
   url: 'https://itxHaroonKhan.github.io',
   // GitHub Pages repo page: use '/repo-name/'
-  baseUrl: '/physical-ai-humanoid-robotics-textbook/',
+  baseUrl: '/',
 
   // GitHub pages deployment config
   organizationName: 'itxHaroonKhan', // Your GitHub username
