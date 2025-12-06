@@ -47,7 +47,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/ph-ai-logo.png',
+      image: 'img/ph-ai-logo.jpg',
       navbar: {
         title: 'Physical AI & Humanoid Robotics Textbook',
         logo: {
